@@ -2,7 +2,7 @@
   "name": "dwpci-awesome-app-2024b",
   "version": "0.0.0",
   "description": "Proyecto de clase de la materia de DWPCI 2024B",
-  "main": "opp.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
