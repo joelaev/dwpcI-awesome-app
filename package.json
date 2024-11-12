@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "description": "Proyecto de clase de la materia de DWPCI 2024B",
   "main": "app.js",
-  
-  "scripts": {   
+  "scripts": {
     "start": "node ./app.js",
     "dev": "nodemon ./app.js"
   },
