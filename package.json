@@ -1,0 +1,24 @@
+{
+  "name": "dwpci-awesome-app-2024b",
+  "version": "0.0.0",
+  "description": "Proyecto de clase de la materia de DWPCI 2024B",
+  "main": "opp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelaev/dwpcI-awesome-app.git"
+  },
+  "keywords": [
+    "Express",
+    "ITGAM",
+    "DWPCI"
+  ],
+  "author": "@joelaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joelaev/dwpcI-awesome-app/issues"
+  },
+  "homepage": "https://github.com/joelaev/dwpcI-awesome-app#readme"
+}
