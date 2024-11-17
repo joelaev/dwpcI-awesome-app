@@ -23,6 +23,9 @@ app.use((req, res, next) => {
   .send("<h1 style='color: crimson;'>🤷‍♂️ Not found 🤷‍♂️</h1>")
 });
 
+// Se agrega ruta de administrador
+app.use('/admin', adminRouter);
+
 // Definiendo puertos
 const port = 3000;
 const ip = "0.0.0.0"
