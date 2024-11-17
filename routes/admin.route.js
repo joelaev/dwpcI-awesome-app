@@ -2,18 +2,16 @@
 import { Router } from 'express';
 // Importando el gestor de rutas
 import path from 'path';
+import { ROOT_DIR } from '../helpers/paths.js';
 
 // Creando una instancia del enrutador de express
 const router = Router();
+
 // GET /add-product
 router.get('/add-product', (req, res, next) => {
-    // Si la petición es post pasamos el siguiente
-    // Middleware
-    if(req.method === "POST") return next();
-  
-    // Servimos el formulario
-    console.log("📢 Sirviendo formulario...");
-    res.sendFile(path.resolve('views','add-product.html'));
+  // Servimos el formulario
+  console.log("📢 Sirviendo formulario...");
+  res.sendFile(path.join(ROOT_DIR, 'views','add-product.html'));
 });
 // POST /add-product
 router.post('/add-product', (req, res) => {
