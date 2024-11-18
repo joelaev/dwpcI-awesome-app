@@ -1,9 +1,13 @@
 // Importando Express
 import express from 'express';
+import httpStatus from 'http-status';
+
 // Importando el enrutador
 import adminRouter from './routes/admin.route.js';
 import shopRouter from './routes/shop.route.js';
-import httpStatus from 'http-status';
+
+// Se importa path
+import path from 'path';
 
 // Creando la instancia de express
 // que basicamente es un middleware
@@ -20,7 +24,7 @@ app.use(shopRouter);
 // 404
 app.use((req, res, next) => {
   res.status(httpStatus.NOT_FOUND)
-  .send("<h1 style='color: crimson;'>🤷‍♂️ Not found 🤷‍♂️</h1>")
+  .sendFile(path.resolve('views','404.html'))
 });
 
 // Se agrega ruta de administrador
