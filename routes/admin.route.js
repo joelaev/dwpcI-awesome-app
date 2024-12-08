@@ -15,7 +15,9 @@ router.get('/admin/add-product', (req, res, next) => {
   // Servimos el formulario
   console.log("📢 Sirviendo formulario...");
   res.render('add-product', {
-    addProduct: `active`, viewStyle: '/css/product.css',
+    addProduct: `active`, 
+    viewStyle: '/css/product.css',
+    viewStyle: '/css/add-product.css',
     docTitle:"Add Product"});
 });
 // POST /add-product
