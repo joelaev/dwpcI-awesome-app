@@ -14,7 +14,7 @@ export const products = [];
 router.get('/admin/add-product', (req, res, next) => {
   // Servimos el formulario
   console.log("📢 Sirviendo formulario...");
-  res.sendFile(path.join(ROOT_DIR, 'views','add-product.html'));
+  res.render('add-product');
 });
 // POST /add-product
 router.post('/admin/add-product', (req, res) => {
