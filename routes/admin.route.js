@@ -14,7 +14,9 @@ export const products = [];
 router.get('/admin/add-product', (req, res, next) => {
   // Servimos el formulario
   console.log("📢 Sirviendo formulario...");
-  res.render('add-product');
+  res.render('add-product', {
+    addProduct: `active`, viewStyle: '/css/product.css',
+    docTitle:"Add Product"});
 });
 // POST /add-product
 router.post('/admin/add-product', (req, res) => {
